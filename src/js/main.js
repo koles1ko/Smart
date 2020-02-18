@@ -3,6 +3,9 @@ console.log(divide(34, 2));
 
 $(function () {
 
+     $(".search").on('click', function(){
+     $(".header__search").toggleClass(".active");
+   }); 
 
   //  $(".test").on('click', function(){
   //    $(".test").toggleClass(".active");
