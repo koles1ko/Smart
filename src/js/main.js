@@ -3,16 +3,30 @@ console.log(divide(34, 2));
 
 $(function () {
 
+
+  //  $(".test").on('click', function(){
+  //    $(".test").toggleClass(".active");
+  //  }); 
+  // додбавление класса
+
+//----------------------------------
+
   // $('.menu__btn').on('click', function(){
   //   $('.menu__list').slideToggle();
-  // }); Для бургера!
+  // });
+  // Для бургера!
+
+//----------------------------------
 
   //   $('.class').slick({
   //   dots: true,
   //   arrows: false,
   //   slidesToShow: 4,
   //   slidesToScroll: 4,
-  // }); Обычный одиночный слайдер!
+  // });
+  // Обычный одиночный слайдер!
+
+//----------------------------------
 
   //  $('.slider-for').slick({
   //   slidesToShow: 1,
@@ -28,8 +42,10 @@ $(function () {
   //   dots: true,
   //   centerMode: true,
   //   focusOnSelect: true
-  // }); Двойной слайдер!
+  // });
+  // Двойной слайдер!
 
+//----------------------------------
 
   // $('.wrapper .tab').on('click', function(event) {
   // var id = $(this).attr('data-id');
@@ -38,6 +54,8 @@ $(function () {
   //   $(this).addClass('active');
   //   $('#'+id).addClass('active-tab').fadeIn();
   //   return false;
-  // }); Для табов!
+  // }); 
+  //Для табов!
 
+  //----------------------------------
 });

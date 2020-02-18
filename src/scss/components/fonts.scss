@@ -1,2 +1,41 @@
-@include fontFace('PT Sans Narrow','PTSansNarrow/PTSansNarrowRegular', normal, normal);
-@include fontFace('PT Sans Narrow','PTSansNarrow/PTSansNarrowBold', bold, normal);
+//@include fontFace('PT Sans Narrow','PTSansNarrow/PTSansNarrowRegular', normal, normal);
+//@include fontFace('PT Sans Narrow','PTSansNarrow/PTSansNarrowBold', bold, normal);
+//@include fontFace('SofiaPro','Sofia/SofiaProBold', bold, normal);
+//@include fontFace('Roboto','Roboto/Roboto-Bold', bold, normal);
+// @include fontFace('lato','lato/latobold', bold, normal);
+
+
+@font-face {
+    font-family: 'Sofia-Pro';
+    src: url('../../fonts/Sofia/SofiaProExtraLight.woff2') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../../fonts/lato/latobold.woff2') format('woff2'), 
+         url('../../fonts/lato/latobold.woff') format('woff'), 
+         url('../../fonts/lato/latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// font-face{
+//   font-family: 'SofiaPro';
+//   src:  url(../../fonts/SofiaProBold.woff),
+//         url(../../fonts/SofiaProBold.woff2),
+//         url(../../fonts/SofiaProBoldExtraLight.woff),
+//         url(../../fonts/SofiaProBoldExtraLight.woff2),
+//         url(../../fonts/SofiaProBoldLight.woff),
+//         url(../../fonts/SofiaProBoldLight.woff2),
+//         url(../../fonts/SofiaProBolMedium.woff),
+//         url(../../fonts/SofiaProBolMedium.woff2),
+//         url(../../fonts/SofiaProBolRegular.woff),
+//         url(../../fonts/SofiaProBolRegular.woff2),
+//         url(../../fonts/SofiaProBolUltraLight.woff),
+//         url(../../fonts/SofiaProBolUltraLight.woff2);
+//         font-style: $style;
+//         font-weight: $weight;
+// }
+
