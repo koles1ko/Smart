@@ -236,6 +236,7 @@ gulp.task('pilot', function () {
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
+    .pipe(gulp.dest('src/js'))
     .pipe(gulp.dest('build/js'))
 });
 
