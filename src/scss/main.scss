@@ -7,55 +7,80 @@
 @import 'components/scaffolding.scss';
 
 .header{
-   display: flex;
-   justify-content: space-between;
-   min-height: 70px;
-   align-items: center;
-   margin-top: 10px;
-   position: relative;
-   .menu-slide{
-      display: none;
-   }
-   &__menu{
-      ul{
-         li{display: inline-block;
-            & + li{margin-left: 85px;}
-            &.current{
-               a{color: #000;}
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid #c8c8c8;
+  .menu-slide{
+    display: none;
+    text-transform: capitalize;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__menu{
+    ul{
+        li{display: inline-block;
+          & + li{margin-left: 85px;}
+          &.current{
+            position: relative;
+            a{
+              color: black;
             }
-         }
-         a{
-            font-size: 12px;
-            color: #686868;
-            text-transform: capitalize;
-         }
-      }
-   }
-   &__search{
+            &::after{
+              position: absolute;
+              content: '';
+              display: block;
+              border: none;
+              border-radius: 50%;
+              background-color: #c8c8c8;
+              width: 5px;
+              height: 5px;
+              left: 50%;
+              transform: translatex(-50%);
+              bottom: -10px;
+            }
+          }
+        }
+        a{
+          font-size: 12px;
+          color: #686868;
+          text-transform: capitalize;
+        }
+    }
+  }
+  &__search{
+    input{
+      border: none;
+      outline: none;
+      border-bottom: 1px solid rgba(#000, .5);
+      background-color: transparent;
+      font-size: 14px;
+      width: 0;
+      text-align: right;
+      padding: 0 10px;
+      transition: .4s;
       opacity: 0;
+      &::placeholder{
+        color: #686868;
+        font-size: 14px;
+      }
+    }
+    .search:hover{
+      cursor: pointer;
+    }
+    &.active{
       input{
-         border: none;
-         outline: none;
-         border-bottom: 1px solid rgba(#000, .5);
-         background-color: transparent;
-         font-size: 14px;
-         width: 200px;
-         text-align: right;
-         padding: 5px 10px;
-         &::placeholder{
-            color: #686868;
-            font-size: 14px;
-         }
+        opacity: 1;
+        width: 200px;
       }
-      &.active{
-         opacity: 1;
-      }
-      
-      .search{
-         position: absolute;
-         right: 0;
-         top: 0;
-      }
-      
-   }
+    }
+  }
+  
 }
+
+
+
+@import 'components/media.scss';

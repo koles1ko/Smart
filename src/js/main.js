@@ -3,12 +3,21 @@ console.log(divide(34, 2));
 
 $(function () {
 
-     $(".search").on('click', function(){
-     $(".header__search").toggleClass(".active");
-   }); 
+  $(".search").on('click', function(){
+    $(".header__search").toggleClass("active");
+  }); 
+
+  // $(".menu-slide").on('click', function () {
+  //   $(".header__menu").toggleClass("active");
+  // }); 
+
+  $('.menu-slide').on('click', function(){
+    $('.header__menu').slideToggle();
+  });
+
 
   //  $(".test").on('click', function(){
-  //    $(".test").toggleClass(".active");
+  //    $(".test").toggleClass("active");
   //  }); 
   // додбавление класса
 
