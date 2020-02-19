@@ -7,12 +7,15 @@ $(function () {
     $(".header__search").toggleClass("active");
   }); 
 
-  // $(".menu-slide").on('click', function () {
-  //   $(".header__menu").toggleClass("active");
-  // }); 
-
   $('.menu-slide').on('click', function(){
     $('.header__menu').slideToggle();
+  });
+
+  $('.slider').slick({
+    // dots: true,
+    // arrows: false,
+    // slidesToShow: 4,
+    // slidesToScroll: 4,
   });
 
 
