@@ -161,6 +161,64 @@
       }
     }
   }
+  .black{
+    background-image: url(../img/raster/watch-bg.png);
+    background-size: contain;
+    background-position: 0 left;
+    background-repeat: no-repeat;
+    
+    &__inner{
+      display: flex;
+      min-height: 800px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  &__image{
+    width: 50%;
+    text-align: center;
+  }
+  &__info{
+    width: 50%;
+    text-align: right;
+    &-title{
+      font-weight: 500;
+      font-size: 55px;
+      text-transform: lowercase;
+      margin-bottom: 30px;
+    }
+    &-text{
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 65px;
+    }
+    &-link,
+    &-desc{
+      font-weight: 300;
+      font-size: 14px;
+      color: #fff;
+    }
+    &-link{
+      padding: 15px 20px;
+      padding-top: 13px;
+      border: 1px solid #fff;
+      transition: .4s;
+      &:hover{
+        background-color: #999;
+        border-color: #999;
+        color: #000;
+      }
+      & + &{
+        margin-left: 35px;
+      }
+    }
+    &-desc{
+      opacity: .3;
+      margin-top: 70px;
+    }
+  }
 }
 
 

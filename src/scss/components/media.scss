@@ -9,6 +9,10 @@
       .slick-prev{left: 50px;}
       .slick-next{right: 50px;}
     }
+    .black{
+      background-image: none;
+
+    }
   }
 }
 
@@ -76,6 +80,25 @@
     .slider{
       &__title{
         font-size: 50px;
+      }
+    }
+    .black{
+      padding-top: 30px;
+      padding-bottom: 40px;
+      &__inner{
+        text-align: center;
+      }
+    }
+    &__image{
+      width: 100%;
+    }
+    &__info{
+      width: 100%;
+      text-align: center;
+      &-link{
+        & + &{
+          margin-top: 20px;
+        }
       }
     }
   }
