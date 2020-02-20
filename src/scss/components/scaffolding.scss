@@ -55,3 +55,67 @@ body {
   background-color: #000;
   color: #fff;
 }
+.section__logo{
+  margin: 0 auto;
+  text-align: center;
+  &-title{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 33px;
+      height: 33px;
+      background-image: url(../../img/svg/logo.png);
+      @include back;
+      top: 4px;
+      left: 50%;
+      transform: translatex(-150px);
+    }
+  }
+  &-text{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: -47px;
+    margin-top: 15px;
+  }
+}
+.big-link{
+  font-weight: 500;
+  font-size: 22px;
+  color: #3589d0;
+  position: relative;
+  padding-right: 28px;
+  font-weight: 700;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 15px;
+    background-image: url(../../img/svg/arrow-blue.png);
+    @include back;
+    right: 9px;
+    top: 8px;
+  }
+}
+.small-link{
+  font-weight: 500;
+  font-size: 14px;
+  color: #3589d0;
+  position: relative;
+  padding-right: 18px;
+  font-weight: 700;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 8px;
+    background-image: url(../../img/svg/arrow-blue-small.png);
+    @include back;
+    right: 6px;
+    top: 6px;
+  }
+}

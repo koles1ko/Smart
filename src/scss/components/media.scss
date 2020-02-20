@@ -16,6 +16,14 @@
   }
 }
 
+@media ( max-width: 900px){
+  .design{
+    &__spec{
+      max-width: 50%;
+    }
+  }
+}
+
 @media ( max-width: 760px){
   .header{
     position: relative;
@@ -111,6 +119,30 @@
       &__item{
         height: 700px;
       }
+    }
+  }
+  .design{
+    &__title{
+      font-size: 35px;
+    }
+    &__spec{
+      max-width: 100%;
+    }
+  }
+}
+@media ( max-width: 450px){
+  .design{
+    .big-link + .big-link{
+      margin-left: 0;
+
+    }
+  }
+}
+@media ( max-width: 360px){
+  .design{
+    .big-link + .big-link{
+      margin-top: 20px;
+
     }
   }
 }
