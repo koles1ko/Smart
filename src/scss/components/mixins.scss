@@ -28,3 +28,9 @@
 //   padding: 0;
 //   list-style: none;
 // }
+
+@mixin back{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

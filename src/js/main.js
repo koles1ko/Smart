@@ -12,11 +12,20 @@ $(function () {
   });
 
   $('.slider').slick({
-    // dots: true,
-    // arrows: false,
-    // slidesToShow: 4,
-    // slidesToScroll: 4,
+    dots: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 761,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   });
+
+
 
 
   //  $(".test").on('click', function(){
@@ -38,6 +47,17 @@ $(function () {
   //   arrows: false,
   //   slidesToShow: 4,
   //   slidesToScroll: 4,
+      // responsive: [
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 3
+      //     }
+      //   }
+      //  ]
   // });
   // Обычный одиночный слайдер!
 
