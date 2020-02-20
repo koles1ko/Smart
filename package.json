@@ -1,6 +1,6 @@
 {
   "name": "gulp4_build_progect",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "> 1%"
   ],
   "keywords": [],
-  "author": "Oleg Moskalenko",
+  "author": "The People",
   "license": "MIT",
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
