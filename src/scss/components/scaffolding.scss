@@ -88,8 +88,10 @@ body {
   font-size: 22px;
   color: #3589d0;
   position: relative;
-  padding-right: 28px;
   font-weight: 700;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: .4s;
   &::after{
     position: absolute;
     content: '';
@@ -97,8 +99,11 @@ body {
     height: 15px;
     background-image: url(../../img/svg/arrow-blue.png);
     @include back;
-    right: 9px;
-    top: 8px;
+    right: -18px;
+    top: 4px;
+  }
+  &:hover{
+    border-color: #3589d0;
   }
 }
 .small-link{
@@ -106,8 +111,10 @@ body {
   font-size: 14px;
   color: #3589d0;
   position: relative;
-  padding-right: 18px;
   font-weight: 700;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: .4s;
   &::after{
     position: absolute;
     content: '';
@@ -115,7 +122,10 @@ body {
     height: 8px;
     background-image: url(../../img/svg/arrow-blue-small.png);
     @include back;
-    right: 6px;
-    top: 6px;
+    right: -12px;
+    top: 3px;
+  }
+  &:hover{
+    border-color: #3589d0;
   }
 }
