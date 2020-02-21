@@ -397,7 +397,79 @@
     }
   }
 }
-
-
+.update{
+  min-height: 300px;
+  padding-top: 30px;
+  &__img{
+    width: 100%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__info{
+    text-align: center;
+    max-width: 680px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+  .big-link + .big-link{margin-left: 70px;}
+  &__form{
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    margin: 40px auto 0;
+    input{
+      padding: 11px 110px 11px 20px; 
+      border: 1px solid #000;
+      margin: 0;
+      width: 100%;
+      font-size: 14px;
+      outline: none;
+    }
+    button{
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 12px 0;
+      width: 100px;
+      color: #fff;
+      background-color: #000;
+      font-weight: 300;
+      font-size: 14px;
+      outline: none;
+      border: none;
+      // z-index: 100;
+    }
+  }
+}
+.instagram{
+  position: relative;
+  font-family: 'icomoon';
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: #000;
+    content: '\ea91';
+    
+  }
+}
 
 @import 'components/media.scss';
