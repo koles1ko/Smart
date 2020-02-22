@@ -456,20 +456,55 @@
     }
   }
 }
-.instagram{
-  position: relative;
-  font-family: 'icomoon';
-  &:before{
-    position: absolute;
-    top: 0;
-    left: 0;
+.footer{
+  
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  & > div{
+    max-width: 33.33%;
+    width: 100%;
+    border-right: 1px solid #000;
+  }
+  & > div:nth-child(3){
+    border: none;
+  }
+
+  a{
+    font-size: 20px;
+    color: #686868;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: .4s;
+    &:hover{
+      border-color: #686868;
+    }
+  }
+  &__social{
+    li{
+      display: inline-block;
+    }
+  }
+  .icon-facebook2,
+  .icon-instagram,
+  .icon-twitter,
+  .icon-linkedin{
+    color: #000;
     width: 30px;
     height: 30px;
     font-size: 30px;
-    color: #000;
-    content: '\ea91';
-    
+  }
+  &__bottom{
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    overflow: hidden;
   }
 }
+
+
 
 @import 'components/media.scss';

@@ -100,7 +100,7 @@ body {
     background-image: url(../../img/svg/arrow-blue.png);
     @include back;
     right: -18px;
-    top: 4px;
+    top: 8px;
   }
   &:hover{
     border-color: #3589d0;
@@ -123,7 +123,7 @@ body {
     background-image: url(../../img/svg/arrow-blue-small.png);
     @include back;
     right: -12px;
-    top: 3px;
+    top: 6px;
   }
   &:hover{
     border-color: #3589d0;

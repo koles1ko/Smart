@@ -24,7 +24,6 @@
     }
   }
 }
-
 @media ( max-width: 900px){
   .design{
     &__spec{
@@ -32,7 +31,6 @@
     }
   }
 }
-
 @media ( max-width: 760px){
   .header{
     position: relative;
@@ -66,7 +64,6 @@
     }
   }
 }
-
 @media ( max-width: 620px){
   .header{
     &__menu{
@@ -147,7 +144,6 @@
     }
   }
 }
-
 @media ( max-width: 550px){
   .intro{
     .slider{
@@ -164,9 +160,16 @@
       max-width: 100%;
     }
   }
-  
+  .footer__social{
+    font-size: 20px;
+    li{
+      display: block;
+      & + li{
+        margin-top: 5px;
+      }
+    }
+  }
 }
-
 @media ( max-width: 450px){
   .design{
     .big-link{
@@ -211,9 +214,6 @@
     }
   }
 }
-
-
-
 @media ( max-width: 400px){
   .intro{
     .slider{
