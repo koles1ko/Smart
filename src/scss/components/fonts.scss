@@ -1,25 +1,21 @@
 //@include fontFace('PT Sans Narrow','PTSansNarrow/PTSansNarrowRegular', normal, normal);
 //@include fontFace('PT Sans Narrow','PTSansNarrow/PTSansNarrowBold', bold, normal);
-//@include fontFace('SofiaPro','Sofia/SofiaProBold', bold, normal);
-//@include fontFace('Roboto','Roboto/Roboto-Bold', bold, normal);
-// @include fontFace('lato','lato/latobold', bold, normal);
+@include fontFace('SofiaProBold','Sofia/SofiaProBold', 700, normal);
+@include fontFace('SofiaProExtraLight','Sofia/SofiaProExtraLight', lighter, normal);
+@include fontFace('SofiaProLight','Sofia/SofiaProLight', light, normal);
+@include fontFace('SofiaProMedium','Sofia/SofiaProMeduim', medium, normal);
+@include fontFace('SofiaProRegular','Sofia/SofiaProRegular', regular, normal);
+@include fontFace('SofiaProUltraLight','Sofia/SofiaProUltraLight', lighter, normal);
 
 
-@font-face {
-    font-family: 'Sofia-Pro';
-    src: url('../../fonts/Sofia/SofiaProExtraLight.woff2') format('woff2');
-    font-weight: lighter;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Sofia-Pro';
+//     src: url('../../fonts/Sofia/SofiaProExtraLight.woff2') format('woff2');
+//     font-weight: lighter;
+//     font-style: normal;
+// }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../../fonts/lato/latobold.woff2') format('woff2'), 
-         url('../../fonts/lato/latobold.woff') format('woff'), 
-         url('../../fonts/lato/latobold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
+
 
 @font-face {
   font-family: 'icomoon';
